@@ -1,25 +1,57 @@
-# Minimercado Online da PUCRS 🛒
+# Minimercado Online PUCRS
 
 ## Descrição
-Este é um projeto de website para a disciplina de Fundamentos de Sistemas Web da PUCRS ONLINE
+Sistema web desenvolvido para um minimercado online, permitindo aos clientes visualizar produtos, realizar compras e agendar entregas ou retiradas.
 
 ## Funcionalidades
-- Catálogo de produtos dividido em categorias:
-  - Frutas e Verduras 🍎
-  - Produtos Não Perecíveis 🥫
-  - Higiene e Limpeza 🧼
-- Seção de serviços com opções de:
+
+### Catálogo de Produtos
+- Visualização de produtos por categorias:
+  - Frutas e Verduras
+  - Não Perecíveis
+  - Higiene e Limpeza
+- Carrossel de ofertas e destaques
+- Imagens e descrições detalhadas dos produtos
+- Preços atualizados
+
+### Carrinho de Compras
+- Carrinho flutuante com atualização em tempo real
+- Adição e remoção de produtos
+- Cálculo automático do total
+- Animações de feedback
+- Layout responsivo
+
+### Cadastro de Clientes
+- Formulário completo com:
+  - Dados pessoais (nome, CPF, email, telefone)
+  - Endereço com busca automática por CEP
+  - Opções de gênero
+  - Validações em tempo real
+
+### Agendamento
+- Duas opções de serviço:
   - Retirada no local
   - Tele-entrega
+- Seleção de data e horário
+- Validação de datas disponíveis
 
 ## Tecnologias Utilizadas
+
+### Frontend
 - HTML5
-- Imagens otimizadas em diferentes formatos (jpg, jpeg, webp)
+- CSS3
+- JavaScript
 
-## Próximas Atualizações
-- [ ] Adicionar estilização CSS
-- [ ] Implementar funcionalidade com Javascript
+## Responsividade
+- Layout adaptativo para:
+  - Desktops
+  - Tablets
+  - Smartphones
 
-## Autor
+## Acessibilidade
+- Descrições alt em imagens
+- Estrutura semântica HTML
+- ARIA labels
+- Navegação por teclado
+- Alto contraste
 
-Guilherme Rosa Fogassi

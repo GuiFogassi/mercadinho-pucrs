@@ -5,109 +5,227 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minimercado Online da PUCRS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>Minimercado da PUCRS</h1>
-    <nav>
-      <ul>
-        <li><a href="#frutas">Frutas e Verduras</a></li>
-        <li><a href="#nao-pereciveis">Não Perecíveis</a></li>
-        <li><a href="#higiene">Higiene e Limpeza</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Conteúdo Principal -->
-  <main>
-    <!-- Seção Frutas e Verduras -->
-    <section id="frutas">
-      <h2>Frutas e Verduras</h2>
-      <div class="produto">
-        <img src="imagens/maca.jpg" alt="Maçã" width="200px">
-        <h3>Maçã Gala</h3>
-        <p>Maçã fresca e selecionada (kg)</p>
-        <p>R$ 8,99</p>
+  <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Minimercado PUCRS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#frutas">Frutas e Verduras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nao-pereciveis">Não Perecíveis</a></li>
+          <li class="nav-item"><a class="nav-link" href="#higiene">Higiene e Limpeza</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+        </ul>
       </div>
-      <div class="produto">
-        <img src="imagens/alface.jpeg" alt="Alface" width="200px">
-        <h3>Alface Crespa</h3>
-        <p>Alface fresca da horta (unidade)</p>
-        <p>R$ 3,50</p>
-      </div>
-    </section>
-
-    <!-- Seção Não Perecíveis -->
-    <section id="nao-pereciveis">
-      <h2>Produtos Não Perecíveis</h2>
-      <div class="produto">
-        <img src="imagens/arroz.webp" alt="Arroz" width="200px">
-        <h3>Arroz Tipo 1</h3>
-        <p>Pacote 5kg</p>
-        <p>R$ 24,90</p>
-      </div>
-      <div class="produto">
-        <img src="imagens/feijao.webp" alt="Feijão" width="200px">
-        <h3>Feijão Carioca</h3>
-        <p>Pacote 1kg</p>
-        <p>R$ 8,99</p>
-      </div>
-    </section>
-
-    <!-- Seção Higiene e Limpeza -->
-    <section id="higiene">
-      <h2>Higiene e Limpeza</h2>
-      <div class="produto">
-        <img src="imagens/sabao.jpg" alt="Sabão em Pó" width="200px">
-        <h3>Sabão em Pó</h3>
-        <p>Embalagem 1kg</p>
-        <p>R$ 15,90</p>
-      </div>
-      <div class="produto">
-        <img src="imagens/papel.webp" alt="Papel Higiênico" width="200px">
-        <h3>Papel Higiênico</h3>
-        <p>Pacote com 12 rolos</p>
-        <p>R$ 18,99</p>
-      </div>
-    </section>
-
-    <!-- Seção Serviços -->
-    <section id="servicos">
-      <h2>Nossos Serviços</h2>
-      <div class="servico">
-        <h3>Retirada no Local</h3>
-        <p>Retire suas compras diretamente em nossa loja</p>
-        <p>Grátis</p>
-      </div>
-      <div class="servico">
-        <h3>Tele-entrega</h3>
-        <p>Entregamos em sua casa</p>
-        <p>R$ 10,00</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; 2024 Minimercado da PUCRS - Todos os direitos reservados</p>
-    <div>
-      <h3>Contato</h3>
-      <p>Telefone: (51) 1234-5678</p>
-      <p>Email: contato@minimercadodapucrs.com.br</p>
-      <p>Endereço: Dr. Flores, 123 - Centro</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#frutas">Frutas e Verduras</a></li>
-        <li><a href="#nao-pereciveis">Não Perecíveis</a></li>
-        <li><a href="#higiene">Higiene e Limpeza</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-      </ul>
-    </nav>
-  </footer>
+  </nav>
+
+  <!-- Carrossel -->
+  <div id="carrosselProdutos" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/banner1.png" class="d-block w-100" alt="Promoções da semana">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/banner2.jpg" class="d-block w-100" alt="Produtos frescos">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselProdutos" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Seção de Cadastro -->
+  <section id="cadastro" class="container my-5">
+    <h2>Cadastro de Cliente</h2>
+    <form id="formCadastro" class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="nome" class="form-label">Nome Completo*</label>
+          <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="cpf" class="form-label">CPF*</label>
+          <input type="text" class="form-control" id="cpf" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="email" class="form-label">E-mail*</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="telefone" class="form-label">Telefone*</label>
+          <input type="tel" class="form-control" id="telefone" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Sexo</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="M">
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="F">
+            <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agendamento -->
+      <div class="mb-3">
+        <label class="form-label">Tipo de Serviço*</label>
+        <select class="form-select" id="tipoServico" required>
+          <option value="">Selecione...</option>
+          <option value="retirada">Retirada no Local</option>
+          <option value="entrega">Tele-entrega</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="dataAgendamento" class="form-label">Data de Agendamento*</label>
+        <input type="date" class="form-control" id="dataAgendamento" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+  </section>
+
+  <!-- Seção de Produtos -->
+  <section id="produtos" class="container my-5">
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+
+    <!-- Frutas e Verduras -->
+    <div id="frutas" class="mb-5">
+      <h3 class="section-title">Frutas e Verduras</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/maca.jpg" class="card-img-top" alt="Maçã Gala - Fruta fresca vermelha">
+            <div class="card-body">
+              <h5 class="card-title">Maçã Gala</h5>
+              <p class="card-text">Maçã fresca e selecionada</p>
+              <p class="preco">R$ 8,99/kg</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Maçã Gala', 8.99)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/alface.jpeg" class="card-img-top" alt="Alface Crespa Fresca">
+            <div class="card-body">
+              <h5 class="card-title">Alface Crespa</h5>
+              <p class="card-text">Alface fresca e crocante</p>
+              <p class="preco">R$ 3,50/unid</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Alface Crespa', 3.50)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Não Perecíveis -->
+    <div id="nao-pereciveis" class="mb-5">
+      <h3 class="section-title">Não Perecíveis</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/arroz.webp" class="card-img-top" alt="Arroz Branco 5kg">
+            <div class="card-body">
+              <h5 class="card-title">Arroz Branco</h5>
+              <p class="card-text">Pacote 5kg</p>
+              <p class="preco">R$ 24,90</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Arroz 5kg', 24.90)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/feijao.webp" class="card-img-top" alt="Feijão Carioca 1kg">
+            <div class="card-body">
+              <h5 class="card-title">Feijão Preto</h5>
+              <p class="card-text">Pacote 1kg</p>
+              <p class="preco">R$ 8,90</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Feijão 1kg', 8.90)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Higiene e Limpeza -->
+    <div id="higiene" class="mb-5">
+      <h3 class="section-title">Higiene e Limpeza</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/papel.webp" class="card-img-top" alt="Papel Higiênico 12 rolos">
+            <div class="card-body">
+              <h5 class="card-title">Papel Higiênico</h5>
+              <p class="card-text">Pacote com 16 rolos</p>
+              <p class="preco">R$ 18,90</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Papel Higiênico 12un', 18.90)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card produto">
+            <img src="imagens/sabao.jpg" class="card-img-top" alt="Sabão em Pó 1kg">
+            <div class="card-body">
+              <h5 class="card-title">Sabão em Pó</h5>
+              <p class="card-text">Embalagem 1kg</p>
+              <p class="preco">R$ 12,90</p>
+              <button class="btn btn-primary w-100" onclick="adicionarAoCarrinho('Sabão em Pó 1kg', 12.90)">
+                Adicionar ao Carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrinho Flutuante -->
+  <div id="carrinho" class="carrinho-flutuante">
+    <h4>Carrinho <span class="badge bg-secondary" id="qtdItens">0</span></h4>
+    <div id="itensCarrinho"></div>
+    <div id="totalCarrinho">Total: R$ 0,00</div>
+    <button class="btn btn-success" onclick="finalizarCompra()">Finalizar Compra</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/validacao.js"></script>
+  <script src="js/carrinho.js"></script>
 </body>
 
 </html>
